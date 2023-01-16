@@ -16,8 +16,8 @@ public partial class CountryPage : ContentPage
     }
     async void OnShowMapButtonClicked(object sender, EventArgs e)
     {
-        var shop = (Country)BindingContext;
-        var address = shop.Address;
+        var country = (Country)BindingContext;
+        var address = country.Address;
         var locations = await Geocoding.GetLocationsAsync(address);
 
         var options = new MapLaunchOptions

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using SQLiteNetExtensions.Attributes;
 
 namespace F1Races2.Models
 { 
@@ -16,8 +17,8 @@ public class RaceList
         public string Description { get; set; }
         public DateTime Date { get; set; }
 
-        [ForeignKey(typeof(Country))]
-        public int CountryID { get; set; }
+        [ForeignKey(typeof(Race))]
+        public int RaceID { get; set; }
 
 
 
