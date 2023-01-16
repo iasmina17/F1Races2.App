@@ -7,16 +7,16 @@ namespace F1Races2
 {
     public partial class App : Application
     {
-        static RaceDatabase database;
-        public static RaceDatabase Database
+        static RaceListDatabase database;
+        public static RaceListDatabase Database
         {
             get
             {
                 if (database == null)
                 {
                     database = new
-                   RaceDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.
-                   LocalApplicationData), "Races.db3"));
+                   RaceListDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.
+                   LocalApplicationData), "RaceList.db3"));
                 }
                 return database;
             }

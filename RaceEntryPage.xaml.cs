@@ -16,7 +16,7 @@ public partial class RaceEntryPage : ContentPage
     {
         await Navigation.PushAsync(new RaceListPage
         {
-            BindingContext = new Race()
+            BindingContext = new RaceList()
         });
     }
     async void OnListViewItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -25,7 +25,7 @@ public partial class RaceEntryPage : ContentPage
         {
             await Navigation.PushAsync(new RaceListPage
             {
-                BindingContext = e.SelectedItem as Race
+                BindingContext = e.SelectedItem as RaceList
             });
         }
     }

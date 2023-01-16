@@ -9,9 +9,9 @@
     
     <TabBar>
         <ShellContent
-        Title="Shopping Lists"
+        Title="Welcome"
         ContentTemplate="{DataTemplate local:MainPage}"
- />
+        />
         <ShellContent
         Title="About"
         ContentTemplate="{DataTemplate local:AboutPage}"
@@ -19,6 +19,10 @@
         <ShellContent
         Title="My Races"
         ContentTemplate="{DataTemplate local:RaceEntryPage}"
+ />
+        <ShellContent
+        Title="My Countries"
+        ContentTemplate="{DataTemplate local:CountryEntryPage}"
  />
     </TabBar>
 </Shell>
