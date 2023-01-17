@@ -14,13 +14,7 @@ namespace F1Races2.Models
         public int ID { get; set; }
         public string CountryName { get; set; }
         public string Address { get; set; }
-        public string CountryDetails
-        {
-            get
-            {
-                return CountryName + " "+Address;} }
-        [OneToMany]
-        public List<RaceList> RaceLists { get; set; }
+       
 
     }
 

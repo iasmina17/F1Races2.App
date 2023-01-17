@@ -17,8 +17,7 @@ public class RaceList
         public string Description { get; set; }
         public DateTime Date { get; set; }
 
-        [ForeignKey(typeof(Race))]
-        public int RaceID { get; set; }
+        
 
 
 
